@@ -1,0 +1,16 @@
+@font-face {
+  font-family: brandonGrotesque;
+  src: url(/assets/fonts/BrandonGrotesque-Light.otf);
+  font-weight: 200
+}
+
+
+@font-face {
+  font-family: brandonGrotesque;
+  src: url(/assets/fonts/BrandonGrotesque-Black.otf);
+  font-weight: 700
+}
+
+footer {
+  
+}

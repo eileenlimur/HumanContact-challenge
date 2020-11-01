@@ -1,0 +1,31 @@
+header {
+  background-color: white;
+  display: flex;
+  height: 11vh;
+  justify-content: space-around;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+header img {
+  height: 100%;
+}
+
+header button {
+  text-transform: uppercase;
+  background-color: inherit;
+  border: none;
+  font-family: brandonGrotesque;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+header nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin-right: -1rem;
+}

@@ -1,8 +1,9 @@
 header {
   background-color: white;
   display: flex;
-  height: 11vh;
   justify-content: space-around;
+  align-items: center;
+  height: 11vh;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -21,6 +22,7 @@ header button {
   font-family: brandonGrotesque;
   font-weight: 700;
   font-size: 1.4rem;
+  height: 1.6rem; /* slightly larger than text so that :focus outline wraps around nicely */
 }
 
 header nav {

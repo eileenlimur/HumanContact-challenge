@@ -1,18 +1,18 @@
-.hero img {
-  width: 100vw;
-  min-height: 79vh; /* matches height of hero */
-  height: auto;
-  margin: auto;
-  position: relative;
-  bottom: 15vh;
-}
-
 .hero {
   position: fixed;
   top: 11vh; /* matches height of header */
   width: 100vw;
   height: 79vh;
   overflow: hidden;
+}
+
+.hero-image {
+  width: 100vw;
+  min-height: 79vh; /* matches height of hero */
+  height: auto;
+  margin: auto;
+  position: relative;
+  bottom: 15vh;
 }
 
 .hero-text {

@@ -5,4 +5,53 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer i {
+  color: white;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.social-buttons {
+  display: flex;
+}
+
+.social-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0px 8px;
+  background-color: inherit;
+}
+
+footer form input {
+  background-color: inherit;
+  color: white;
+  font-family: brandonGrotesque;
+  font-size: 1.2rem;
+  width: 20rem;
+}
+
+footer form input::placeholder {
+  color: white;
+  border-style: none;
+}
+
+footer form input:focus {
+  outline: none;
+}
+
+footer form button {
+  background-color: white;
+  border-style: none;
+  font-family: brandonGrotesque;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.5px 40px;
+  text-transform: uppercase;
 }

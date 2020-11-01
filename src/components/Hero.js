@@ -27,7 +27,7 @@ export default function () {
     <div className='hero'>
       <img className='hero-image' alt='red sneaker' src={imageSource}/>
       <div className='hero-text'>
-        <h1>We <span>Really</span> love shoes</h1>
+        <h1>We <strong>Really</strong> love shoes</h1>
         <h2>Sneakerhead wears, reviews and rates all the latest and greatest kicks on the market.</h2>
       </div>
       <HeroNav displayShoe={heroShoe} selectShoe={setHeroShoe}/>

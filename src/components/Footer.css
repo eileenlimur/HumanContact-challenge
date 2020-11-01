@@ -1,0 +1,8 @@
+footer {
+  background-color: rgb(26,25,26);
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

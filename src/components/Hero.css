@@ -1,25 +1,23 @@
 .hero {
-  position: absolute;
-  top: 11vh; /* matches height of header */
-  height: 79vh;
+  position: relative;
+  top: 11vh;
+  left: 0px;
   width: 100vw;
+  height: 100%;
   overflow: hidden;
 }
 
 .hero-image {
+  position: absolute;
   width: 100vw;
-  min-height: 79vh; /* matches height of hero */
-  height: auto;
-  position: relative;
-  bottom: 14vh;
+  bottom: -3vh;
 }
 
 .hero-text {
   position: absolute;
   width: 100%;
-  z-index: 3000;
+  top: 5vh;
   color: white;
-  top: 8%;
   text-align: center;
   font-family: brandonGrotesque;
 }
@@ -39,7 +37,7 @@
 
 @media only screen and (max-width: 1268px) {
   .hero-image {
-    bottom: 10vh;
+    bottom: 0vh;
     width: 120vw;
     left: -10vw;
   }
@@ -47,9 +45,37 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
   .hero-image {
-    left: -20vw;
-    width: 140vw;
+    left: -25vw;
+    width: 150vw;
     bottom: 0vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-image {
+    left: -30vw;
+    width: 160vw;
+    bottom: 5vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+    top: 12vh;
+  }
+  .hero-text h2 {
+    visibility: hidden;
+  }
+  .hero-image {
+    left: -45vw;
+    width: 190vw;
+    bottom: 7vh;
   }
 }

@@ -9,7 +9,7 @@ export default function() {
 
   return (
     <header>
-    <img alt='sneaker-head logo' src='assets/logo/sn-logo-h.png'/>
+    <a href='#' className='logo' onClick={handleSubmit}><img alt='sneaker-head logo' src='assets/logo/sn-logo-h.png'/></a>
     <nav>
       <button onClick={handleSubmit}>Top 10</button>
       <button onClick={handleSubmit}>Blog</button>

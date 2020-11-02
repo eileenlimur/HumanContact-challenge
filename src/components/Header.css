@@ -7,11 +7,15 @@ header {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
 }
 
-header img {
+header .logo {
+  height: 100%;
+}
+
+header .logo img {
   height: 100%;
 }
 
@@ -22,12 +26,33 @@ header button {
   font-family: brandonGrotesque;
   font-weight: 700;
   font-size: 1.4rem;
-  height: 1.6rem; /* slightly larger than text so that :focus outline wraps around nicely */
+}
+
+header button:hover, header button:focus {
+text-decoration: underline;
 }
 
 header nav {
+  height: 100%;
   display: flex;
   width: 30%;
   justify-content: space-between;
   margin-right: -1rem;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+  }
+  header .logo {
+    height: 80%;
+  }
 }

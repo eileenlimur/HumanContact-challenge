@@ -2,9 +2,7 @@ footer {
   background-color: rgb(26,25,26);
   height: 10vh;
   width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -54,7 +52,7 @@ footer form button {
   font-family: brandonGrotesque;
   font-weight: 700;
   font-size: 1.5rem;
-  padding: 1.5px 40px;
+  padding: 1.5px 35px;
   text-transform: uppercase;
 }
 
@@ -62,14 +60,36 @@ footer form button:hover, .social-button:hover, footer form button:focus, .socia
   box-shadow: 0 0 8px gray;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   footer {
     flex-direction: column;
     height: 20vh;
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    height: 30vh;
+    position: static;
   }
 
   footer form {
     display: flex;
     flex-direction: column;
+  }
+
+  footer form input {
+    font-size: 1rem;
+    width: 12rem;
+  }
+
+  footer form button {
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 5px;
+    padding: 1.5px 20px;
+    text-align: center;
   }
 }

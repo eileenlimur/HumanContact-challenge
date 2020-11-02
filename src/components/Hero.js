@@ -7,6 +7,28 @@ export default function () {
   const [imageSource, setImageSource] = useState('/assets/backgrounds/red-shoe.png')
 
   useEffect(()=>{
+    const interval = setInterval(()=>{
+      switch(heroShoe) {
+        case 'red':
+          setHeroShoe('green')
+          break;
+        case 'green':
+          setHeroShoe('peach')
+          break;
+        case 'peach':
+          setHeroShoe('blue')
+          break;
+        case 'blue':
+          setHeroShoe('red')
+          break;
+        default:
+        setHeroShoe('red');
+      }
+    }, 3000)
+    return () => clearInterval(interval);
+  },[heroShoe])
+
+  useEffect(()=>{
     switch(heroShoe) {
       case 'red':
         setImageSource('/assets/backgrounds/red-shoe.png');

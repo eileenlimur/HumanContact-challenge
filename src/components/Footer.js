@@ -11,18 +11,18 @@ export default function() {
     <footer>
       <div className='social-buttons'>
         <button className='social-button' onClick={handleSubmit}>
-          <i class="fab fa-instagram"></i>
+          <i className="fab fa-instagram"></i>
         </button >
         <button className='social-button' onClick={handleSubmit}>
-          <i class="fab fa-twitter"></i>
+          <i className="fab fa-twitter"></i>
         </button>
         <button className='social-button' onClick={handleSubmit}>
-          <i class="fab fa-facebook-f"></i>
+          <i className="fab fa-facebook-f"></i>
         </button>
       </div>
       <form>
         <input placeholder='Enter Email. Stay up-to-date.'/>
-        <button onClick={handleSubmit}>
+        <button onClick={handleSubmit} type='submit'>
           Signup
         </button>
       </form>

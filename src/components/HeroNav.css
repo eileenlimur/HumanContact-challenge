@@ -18,7 +18,7 @@
   border-radius: 5px;
   overflow: hidden;
   width: 57px;
-  height: 30px;
+  height: 37px;
   margin: 2px;
 }
 
@@ -26,10 +26,22 @@
   width: 100px;
   height: auto;
   position: relative;
-  top: -25px;
+  top: -19px;
   left: -40px;
 }
 
-.hero-nav-thumbnail-image.higher {
-  top: -20px;
+.hero-nav-thumbnail:hover, .hero-nav-thumbnail:focus {
+  box-shadow: 0 0 8px gray;
+}
+
+.hero-nav-thumbnail-image.selected {
+  filter: brightness(50%);
+}
+
+.hero-nav-thumbnail-image.peach {
+  top: -24px;
+}
+
+.hero-nav-thumbnail-image.blue {
+  top: -22px;
 }

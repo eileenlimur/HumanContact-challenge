@@ -16,9 +16,18 @@
 }
 
 body {
-  background-color: red;
+  background-color: white;
 }
 
 button {
   cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
 }

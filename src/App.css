@@ -23,7 +23,7 @@ button {
   cursor: pointer;
 }
 
-button:focus {
+*:focus {
   outline: none;
 }
 
@@ -31,4 +31,5 @@ button:focus {
   display: flex;
   height: 100vh;
   flex-direction: column;
+  overflow-y: hidden;
 }

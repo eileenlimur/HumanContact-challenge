@@ -35,18 +35,35 @@ text-decoration: underline;
 header nav {
   height: 100%;
   display: flex;
-  width: 30%;
   justify-content: space-between;
   margin-right: -1rem;
+}
+
+header nav button {
   white-space: nowrap;
 }
 
-@media only screen and (max-width: 600px) {
+.hamburger {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.hamburger-stripe {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+@media only screen and (max-width: 768px) {
   header nav {
     visibility: hidden;
     position: absolute;
   }
+}
 
+@media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
     align-items: center;

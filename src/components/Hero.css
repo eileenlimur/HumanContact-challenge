@@ -1,8 +1,8 @@
 .hero {
-  position: fixed;
+  position: absolute;
   top: 11vh; /* matches height of header */
-  width: 100vw;
   height: 79vh;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -10,9 +10,8 @@
   width: 100vw;
   min-height: 79vh; /* matches height of hero */
   height: auto;
-  margin: auto;
   position: relative;
-  bottom: 15vh;
+  bottom: 14vh;
 }
 
 .hero-text {
@@ -36,4 +35,21 @@
   font-size: 1.8rem;
   width: 40%;
   margin: auto;
+}
+
+@media only screen and (max-width: 1268px) {
+  .hero-image {
+    bottom: 10vh;
+    width: 120vw;
+    left: -10vw;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  .hero-image {
+    left: -20vw;
+    width: 140vw;
+    bottom: 0vh;
+  }
 }

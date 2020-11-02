@@ -62,15 +62,19 @@ footer form button:hover, .social-button:hover, footer form button:focus, .socia
 
 @media only screen and (max-width: 992px) {
   footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
     height: 20vh;
     position: static;
+  }
+
+  footer form {
+    margin-bottom: 17px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   footer {
-    flex-direction: column;
     height: 30vh;
     position: static;
   }
@@ -81,14 +85,14 @@ footer form button:hover, .social-button:hover, footer form button:focus, .socia
   }
 
   footer form input {
-    font-size: 1rem;
-    width: 12rem;
+    font-size: 1.2rem;
+    width: 14rem;
   }
 
   footer form button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 1.5px 20px;
     text-align: center;
   }

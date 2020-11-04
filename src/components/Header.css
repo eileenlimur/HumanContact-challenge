@@ -3,10 +3,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 11vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  height: 85px;
   width: 100vw;
   z-index: 100;
 }
@@ -32,11 +29,18 @@ header button:hover, header button:focus {
 text-decoration: underline;
 }
 
-header nav {
+header nav .widescreen-nav {
   height: 100%;
   display: flex;
   justify-content: space-between;
   margin-right: -1rem;
+}
+
+header nav .narrowscreen-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 500px;
 }
 
 header nav button {
@@ -57,7 +61,7 @@ header nav button {
 }
 
 @media only screen and (max-width: 768px) {
-  header nav {
+  header nav .widescreen-nav {
     visibility: hidden;
     position: absolute;
   }

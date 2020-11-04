@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  top: 11vh;
   left: 0px;
   width: 100vw;
   height: 100%;
@@ -10,7 +9,7 @@
 .hero-image {
   position: absolute;
   width: 100vw;
-  bottom: -3vh;
+  bottom: -10vh;
 }
 
 .hero-text {
@@ -35,11 +34,11 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 1268px) {
+@media only screen and (max-width: 1200px) {
   .hero-image {
-    bottom: 0vh;
-    width: 120vw;
-    left: -10vw;
+    bottom: -5vh;
+    width: 110vw;
+    left: -5vw;
   }
 
 }
@@ -52,30 +51,31 @@
     font-size: 1.5rem;
   }
   .hero-image {
-    left: -25vw;
+    bottom: -10vh;
     width: 150vw;
-    bottom: 0vh;
+    left: -25vw;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
   .hero-image {
     left: -30vw;
     width: 160vw;
-    bottom: 5vh;
+    bottom: 0vh;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .hero-text {
-    top: 12vh;
+    top: 10vh;
   }
   .hero-text h2 {
     visibility: hidden;
   }
   .hero-image {
-    left: -45vw;
-    width: 190vw;
-    bottom: 7vh;
+    left: -50vw;
+    width: 200vw;
+    bottom: -5vh;
   }
 }

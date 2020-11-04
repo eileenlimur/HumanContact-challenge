@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css';
 
 export default function() {
+  const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setEmail('');
   }
 
   return (
@@ -21,7 +23,7 @@ export default function() {
         </button>
       </div>
       <form>
-        <input placeholder='Enter Email. Stay up-to-date.'/>
+        <input value={email} onChange={e=>setEmail(e.target.value)} placeholder='Enter Email. Stay up-to-date.'/>
         <button onClick={handleSubmit} type='submit'>
           Signup
         </button>

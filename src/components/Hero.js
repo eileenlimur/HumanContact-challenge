@@ -11,24 +11,34 @@ export default function () {
       switch(heroShoe) {
         case 'red':
           setHeroShoe('green')
-          setImageSource('/assets/backgrounds/green-shoe.png');
           break;
         case 'green':
           setHeroShoe('peach')
-          setImageSource('/assets/backgrounds/peach-shoe.png');
           break;
         case 'peach':
           setHeroShoe('blue')
-          setImageSource('/assets/backgrounds/blue-shoe.png');
           break;
         case 'blue':
           setHeroShoe('red')
-          setImageSource('/assets/backgrounds/red-shoe.png');
           break;
         default:
            setHeroShoe('red');
       }
     }, 3000)
+    switch(heroShoe) {
+      case 'red':
+        setImageSource('/assets/backgrounds/red-shoe.png');
+        break;
+      case 'green':
+        setImageSource('/assets/backgrounds/green-shoe.png');
+        break;
+      case 'peach':
+        setImageSource('/assets/backgrounds/peach-shoe.png');
+        break;
+      case 'blue':
+        setImageSource('/assets/backgrounds/blue-shoe.png');
+        break;
+      }
     return () => clearInterval(interval);
   },[heroShoe])
 

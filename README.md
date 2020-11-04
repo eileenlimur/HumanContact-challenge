@@ -6,7 +6,7 @@ A Humancontact frontend code challenge completed by Eileen.
 
 ## CRA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built using React and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

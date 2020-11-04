@@ -3,7 +3,6 @@ import './Header.css'
 
 export default function() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(()=>{
     const updateWindow = () => {
@@ -15,36 +14,26 @@ export default function() {
     }
   },[])
 
-  const handleSubmit = (e) => {
+  const handleRedirect = (e) => {
     e.preventDefault();
-  }
-
-  const toggleDropdown = () => {
-    showDropdown === true ? setShowDropdown(false) : setShowDropdown(true);
   }
 
   return (
     <header>
-    <a href='#' className='logo' onClick={handleSubmit}><img alt='sneaker-head logo' src='assets/logo/sn-logo-h.png'/></a>
+    <a href='#' className='logo' onClick={handleRedirect}><img alt='sneaker-head logo' src='assets/logo/sn-logo-h.png'/></a>
     {(windowWidth > 768) ?
       (<nav className='widescreen-nav'>
-        <button onClick={handleSubmit}>Top 10</button>
-        <button onClick={handleSubmit}>Blog</button>
-        <button onClick={handleSubmit}>About</button>
-        <button onClick={handleSubmit}>Connect</button>
+        <button onClick={handleRedirect}>Top 10</button>
+        <button onClick={handleRedirect}>Blog</button>
+        <button onClick={handleRedirect}>About</button>
+        <button onClick={handleRedirect}>Connect</button>
       </nav>) :
       (<>
-        <div className='hamburger' onClick={toggleDropdown}>
+        <div className='hamburger'>
           <div className='hamburger-stripe'></div>
           <div className='hamburger-stripe'></div>
           <div className='hamburger-stripe'></div>
         </div>
-        {showDropdown && <nav className='narrowscreen-nav'>
-          <button onClick={handleSubmit}>Top 10</button>
-          <button onClick={handleSubmit}>Blog</button>
-          <button onClick={handleSubmit}>About</button>
-          <button onClick={handleSubmit}>Connect</button>
-        </nav>}
       </>)
     }
   </header>

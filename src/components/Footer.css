@@ -2,7 +2,6 @@ footer {
   background-color: rgb(26,25,26);
   height: 100px;
   width: 100%;
-  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -12,10 +11,6 @@ footer i {
   color: white;
   margin: auto;
   font-size: 1.5rem;
-}
-
-.social-buttons {
-  display: flex;
 }
 
 .social-button {
@@ -65,7 +60,6 @@ footer form button:hover, .social-button:hover, footer form button:focus, .socia
     flex-direction: column-reverse;
     justify-content: center;
     height: 20vh;
-    position: static;
   }
 
   footer form {
@@ -73,10 +67,9 @@ footer form button:hover, .social-button:hover, footer form button:focus, .socia
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   footer {
     height: 30vh;
-    position: static;
   }
 
   footer form {

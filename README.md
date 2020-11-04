@@ -2,6 +2,8 @@
 
 A Humancontact frontend code challenge completed by Eileen.
 
+![Sneakerhead Challenge Preview](https://github.com/eileenlimur/HumanContact-challenge/blob/master/public/preview/sneakerhead-preview-eileen.png?raw=true)
+
 ## CRA
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

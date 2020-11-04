@@ -13,7 +13,7 @@ footer i {
   font-size: 1.5rem;
 }
 
-.social-button {
+footer .social-button {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
@@ -28,6 +28,7 @@ footer form input {
   font-family: brandonGrotesque;
   font-size: 1.2rem;
   width: 15rem;
+  margin-bottom: 2px; /* seeking better fix */
   border-style: none;
   border-bottom: solid 2px white;
 }
@@ -63,7 +64,7 @@ footer form button:hover, .social-button:hover, footer form button:focus, .socia
   }
 
   footer form {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 }
 
